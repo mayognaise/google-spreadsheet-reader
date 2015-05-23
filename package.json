@@ -1,0 +1,33 @@
+{
+  "name": "google-spreadsheet-reader",
+  "version": "0.1.1",
+  "description": "test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mayognaise/google-spreadsheet-reader"
+  },
+  "keywords": [
+    "spreadsheet",
+    "google",
+    "reader",
+    "json"
+  ],
+  "author": "mayognaise",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mayognaise/google-spreadsheet-reader/issues"
+  },
+  "homepage": "https://github.com/mayognaise/google-spreadsheet-reader",
+  "dependencies": {
+    "camelcase": "^1.1.0",
+    "superagent": "^1.2.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-babel": "^5.1.0"
+  }
+}
