@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Google SpreadSheet Reader Demo</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/highlight.js/8.8.0/styles/default.min.css">
+  <script src="https://use.typekit.net/hqm8iro.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+</head>
+<body>
+<h1>Google SpreadSheet Reader Demo</h1>
+<iframe width="980" height="270" src="https://docs.google.com/spreadsheets/d/1lBbCRh6N2Ozz8oEB9fIRN4vuUNQhErqGbAQbHAu2w5Q/pubhtml"></iframe>
+<p>SpreadSheet Link: <a href="https://docs.google.com/spreadsheets/d/1lBbCRh6N2Ozz8oEB9fIRN4vuUNQhErqGbAQbHAu2w5Q/edit#gid=219139375">https://docs.google.com/spreadsheets/d/1lBbCRh6N2Ozz8oEB9fIRN4vuUNQhErqGbAQbHAu2w5Q/edit#gid=219139375</a></p>
+<p>Github: <a href="https://github.com/mayognaise/google-spreadsheet-reader">https://github.com/mayognaise/google-spreadsheet-reader</a></p>
+<h2>Code:</h2>
+<pre id="pre">
+  <code class="javascript">
+var SpreadSheet = require('google-spreadsheet-reader');
+
+// Create SpreadSheet Object
+var spreadSheet = new SpreadSheet('1lBbCRh6N2Ozz8oEB9fIRN4vuUNQhErqGbAQbHAu2w5Q');
+
+spreadSheet.load({ camelcase: true })
+  .then(function(res) { console.log(res); }) // JSON with camelcased properties!
+  .catch(function(err) { console.error(err.message); });
+  </code>
+</pre>
+<h2>Result:</h2>
+<div id="res"></div>
+<script src="//cdn.jsdelivr.net/highlight.js/8.8.0/highlight.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
