@@ -43,9 +43,19 @@ After toggle [**Published content & settings**], click [**Stop publishing**]
 
 ## Usage
 
+### Example
+
+For example, see [this spreadsheet example](https://docs.google.com/spreadsheets/d/1lBbCRh6N2Ozz8oEB9fIRN4vuUNQhErqGbAQbHAu2w5Q/edit?usp=sharing).
+
+
+### Get key
+
 Use `key` from URL.
 
 ![Copy key](https://dl.dropboxusercontent.com/u/3497191/gsr/gsr_0006_copy-id.png)
+
+
+### Basic example:
 
 ```js
 var SpreadSheet = require('../google-spreadsheet-reader');
@@ -54,14 +64,29 @@ var SpreadSheet = require('../google-spreadsheet-reader');
 var spreadSheet = new SpreadSheet('1lBbCRh6N2Ozz8oEB9fIRN4vuUNQhErqGbAQbHAu2w5Q');
 
 // Load all pages
+spreadSheet.load()
+  .then(function(res) { console.log(res); }) // beautiful JSON!
+  .catch(function(err) { console.error(err.message); }); // Aw, something happened.
+```
+
+Result:
+
+![Copy key](https://dl.dropboxusercontent.com/u/3497191/gsr/gsr_result1.png)
+
+
+### Options:
+
+You can change the properties as camel case.
+
+```js
 spreadSheet.load({camelcase: true})
   .then(function(res) { console.log(res); }) // beautiful JSON!
   .catch(function(err) { console.error(err.message); }); // Aw, something happened.
 ```
 
+Result:
 
-
-
+![Copy key](https://dl.dropboxusercontent.com/u/3497191/gsr/gsr_result2.png)
 
 
 
