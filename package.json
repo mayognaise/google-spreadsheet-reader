@@ -1,10 +1,11 @@
 {
   "name": "google-spreadsheet-reader",
-  "version": "0.1.1",
+  "version": "0.1.5",
   "description": "test",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "babel-node": "babel-node --stage 0 --ignore='foo|bar|baz'"
   },
   "repository": {
     "type": "git",
@@ -23,11 +24,16 @@
   },
   "homepage": "https://github.com/mayognaise/google-spreadsheet-reader",
   "dependencies": {
-    "camelcase": "^1.1.0",
-    "superagent": "^1.2.0"
+    "camelcase": "^1.2.1",
+    "es6-promise": "^3.0.2",
+    "superagent": "^1.4.0"
   },
   "devDependencies": {
-    "gulp": "^3.8.11",
-    "gulp-babel": "^5.1.0"
+    "gulp-babel": "^5.2.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-connect": "^2.2.0",
+    "gulp-nodemon": "^2.0.4",
+    "gulp-rename": "^1.2.2",
+    "json-markup": "^0.1.6"
   }
 }
