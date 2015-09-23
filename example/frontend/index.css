@@ -2,17 +2,15 @@ body {
   padding: 0;
   margin: 0 20px;
   background-color: white;
+  font-family: sans-serif;
 }
-.cover {
-  width: 100%;
-  height: 20px;
+h1 {
   position: fixed;
   z-index: 1;
-  background-color: white;
   top: 0;
 }
 iframe {
-  top: 20px;
+  top: 75px;
   width: 980px;
   height: 270px;
   border: solid 1px black;
@@ -20,7 +18,7 @@ iframe {
   z-index: 1;
 }
 iframe + p {
-  padding-top: 300px;
+  padding-top: 355px;
 }
 .json-markup {
   line-height: 17px;
