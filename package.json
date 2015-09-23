@@ -1,7 +1,7 @@
 {
   "name": "google-spreadsheet-reader",
-  "version": "0.1.7",
-  "description": "Convert Google SpreadSheet to a nicely JSON.",
+  "version": "0.1.8",
+  "description": "Convert Google SpreadSheet to a pretty JSON.",
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
