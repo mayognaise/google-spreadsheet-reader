@@ -1,0 +1,43 @@
+body {
+  padding: 0;
+  margin: 0 20px;
+  background-color: white;
+  font-family: sans-serif;
+}
+h1 {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+}
+iframe {
+  top: 75px;
+  width: 980px;
+  height: 270px;
+  border: solid 1px black;
+  position: fixed;
+  z-index: 1;
+}
+iframe + p {
+  padding-top: 355px;
+}
+.json-markup {
+  line-height: 17px;
+  font-size: 13px;
+  font-family: monospace;
+  white-space: pre;
+}
+.json-markup-key {
+  font-weight: bold;
+}
+.json-markup-bool {
+  color: firebrick;
+}
+.json-markup-string {
+  color: green;
+}
+.json-markup-null {
+  color: gray;
+}
+.json-markup-number {
+  color: blue;
+}
