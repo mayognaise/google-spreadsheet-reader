@@ -2,6 +2,8 @@
 
 Convert Google SpreadSheet to a nicely JSON.
 
+## Demo [Click here](http://mayognaise.github.io/google-spreadsheet-reader/)
+
 ![Home](https://dl.dropboxusercontent.com/u/3497191/gsr/gsr_0000_home.png)
 
 ## Install
