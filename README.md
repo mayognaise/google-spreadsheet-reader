@@ -54,16 +54,16 @@ Use `key` from URL.
 
 ![Copy key](https://dl.dropboxusercontent.com/u/3497191/gsr/gsr_0006_copy-id.png)
 
+```js
+var SpreadSheet = require('google-spreadsheet-reader');
+
+// Create SpreadSheet Object
+var spreadSheet = new SpreadSheet('1lBbCRh6N2Ozz8oEB9fIRN4vuUNQhErqGbAQbHAu2w5Q');
+```
 
 ### Basic example:
 
 ```js
-var SpreadSheet = require('../google-spreadsheet-reader');
-
-// Create SpreadSheet Object
-var spreadSheet = new SpreadSheet('1lBbCRh6N2Ozz8oEB9fIRN4vuUNQhErqGbAQbHAu2w5Q');
-
-// Load all pages
 spreadSheet.load()
   .then(function(res) { console.log(res); }) // beautiful JSON!
   .catch(function(err) { console.error(err.message); }); // Aw, something happened.
@@ -80,8 +80,8 @@ You can change the properties as camel case.
 
 ```js
 spreadSheet.load({camelcase: true})
-  .then(function(res) { console.log(res); }) // beautiful JSON!
-  .catch(function(err) { console.error(err.message); }); // Aw, something happened.
+  .then(function(res) { console.log(res); }) // JSON with camelcased properties!
+  .catch(function(err) { console.error(err.message); });
 ```
 
 Result:
@@ -89,4 +89,27 @@ Result:
 ![Copy key](https://dl.dropboxusercontent.com/u/3497191/gsr/gsr_result2.png)
 
 
+### Convert interface
+
+You can add a schema for each collumn to change the interface
+
+#### int / float / number
+
+Add type next to property. (**e.g.** `Population: int`)
+
+![Continents](https://dl.dropboxusercontent.com/u/3497191/gsr/gsr_interface_continents.png)
+
+#### Array / JSON
+
+For `Array`, split items with `|` (**e.g.** `Genotype: Array`)
+
+![Blood Type](https://dl.dropboxusercontent.com/u/3497191/gsr/gsr_interface_blood-type.png)
+
+### Convert page items to Object
+
+You can create Object with the first collumn as property.
+
+Add `: Object` next to the first property. (**e.g.** `id: Object`)
+
+![Copy](https://dl.dropboxusercontent.com/u/3497191/gsr/gsr_interface_copy.png)
 
