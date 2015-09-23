@@ -2922,14 +2922,14 @@ var key = '1lBbCRh6N2Ozz8oEB9fIRN4vuUNQhErqGbAQbHAu2w5Q';
 var spreadSheet = new SpreadSheet(key);
 
 // Load all pages
-spreadSheet.load({camelcase: true})
+spreadSheet.load({ camelcase: true })
   .then(function(res) {
 
     // Log
     console.log(res);
 
     // Display json to body
-    document.body.innerHTML = jsonMarkup(res);
+    document.getElementById('res').innerHTML = jsonMarkup(res);
 
   })
   .catch(function(err) {
@@ -2941,4 +2941,7 @@ spreadSheet.load({camelcase: true})
     alert(err.message);
 
   });
+
+// Hightlight
+hljs.highlightBlock(document.getElementById('pre'));
 },{"../dist":1,"json-markup":5}]},{},[9])

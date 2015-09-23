@@ -79,7 +79,7 @@ Result:
 You can change the properties as camel case.
 
 ```js
-spreadSheet.load({camelcase: true})
+spreadSheet.load({ camelcase: true })
   .then(function(res) { console.log(res); }) // JSON with camelcased properties!
   .catch(function(err) { console.error(err.message); });
 ```
