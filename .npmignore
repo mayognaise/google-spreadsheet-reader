@@ -1,9 +1,10 @@
 .npmignore
 .gitignore
-.gitmodules
-.travis.yml
-.coveralls.yml
 
+esdoc/
 test/
 node_modules/
-coverage/
+example/
+src/example-frontend.js
+esdoc.json
+gulpfile.js
