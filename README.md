@@ -1,6 +1,6 @@
 # google-spreadsheet-reader
 
-Convert Google SpreadSheet to a pretty JSON.
+Converts a Google SpreadSheet to a pretty JSON.
 
 ### Demo [Click here](http://mayognaise.github.io/google-spreadsheet-reader/)
 
@@ -52,7 +52,7 @@ For example, see [this spreadsheet example](https://docs.google.com/spreadsheets
 
 ### Get key
 
-Use `key` from URL.
+Use the `key` from the URL.
 
 ![Copy key](https://dl.dropboxusercontent.com/u/3497191/gsr/gsr_0006_copy-id.png)
 
@@ -78,7 +78,7 @@ Result:
 
 ### Options:
 
-You can change the properties as camel case.
+You can change the property names to [camelCase](https://github.com/sindresorhus/camelcase/blob/master/readme.md#usage) by setting the `camelcase` flag to `true`.
 
 ```js
 spreadSheet.load({ camelcase: true })
@@ -91,9 +91,9 @@ Result:
 ![Copy key](https://dl.dropboxusercontent.com/u/3497191/gsr/gsr_result2.png)
 
 
-### Convert interface
+### Represent data types
 
-You can add a schema for each collumn to change the interface
+You can represent [JSON data types](https://en.wikipedia.org/wiki/JSON#Data_types.2C_syntax_and_example) with the following spreadsheet configurations.
 
 #### int / float / number
 
@@ -103,15 +103,15 @@ Add type next to property. (**e.g.** `Population: int`)
 
 #### Array / JSON
 
-For `Array`, split items with `|` (**e.g.** `Genotype: Array`)
+For `array`, split items with `|` (**e.g.** `Genotype: array`)
 
 ![Blood Type](https://dl.dropboxusercontent.com/u/3497191/gsr/gsr_interface_blood-type.png)
 
-### Convert page items to Object
+### Convert page items to `object`
 
-You can create Object with the first collumn as property.
+You can create an `object` type and with the first column, define its properties.
 
-Add `: Object` next to the first property. (**e.g.** `id: Object`)
+Add `: object` next to the first property. (**e.g.** `id: object`)
 
 ![Copy](https://dl.dropboxusercontent.com/u/3497191/gsr/gsr_interface_copy.png)
 
