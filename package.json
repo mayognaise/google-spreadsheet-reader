@@ -1,6 +1,6 @@
 {
   "name": "google-spreadsheet-reader",
-  "version": "0.1.9",
+  "version": "0.2.0",
   "description": "Converts a Google SpreadSheet to a pretty JSON.",
   "main": "dist/index.js",
   "scripts": {

@@ -2,7 +2,7 @@
 
 Converts a Google SpreadSheet to a pretty JSON.
 
-This works with both server side-side and client-side :)
+This works with both server server-side and client-side :)
 
 ### Demo [Click here](http://mayognaise.github.io/google-spreadsheet-reader/)
 

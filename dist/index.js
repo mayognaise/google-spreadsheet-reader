@@ -25,7 +25,7 @@ var FEED_URL = 'https://spreadsheets.google.com/feeds/worksheets/{key}/public/ba
 
 /**
  * @access public
- * @version 0.1.9
+ * @version 0.2.0
  * @since 0.1.5
  */
 
