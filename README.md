@@ -103,15 +103,15 @@ Add type next to property. (**e.g.** `Population: int`)
 
 #### Array / JSON
 
-For `array`, split items with `|` (**e.g.** `Genotype: array`)
+For `Array`, split items with `|` (**e.g.** `Genotype: Array`)
 
 ![Blood Type](https://dl.dropboxusercontent.com/u/3497191/gsr/gsr_interface_blood-type.png)
 
-### Convert page items to `object`
+### Convert page items to `Object`
 
-You can create an `object` type and with the first column, define its properties.
+You can create an `Object` type and with the first column, define its properties.
 
-Add `: object` next to the first property. (**e.g.** `id: object`)
+Add `: Object` next to the first property. (**e.g.** `id: Object`)
 
 ![Copy](https://dl.dropboxusercontent.com/u/3497191/gsr/gsr_interface_copy.png)
 
