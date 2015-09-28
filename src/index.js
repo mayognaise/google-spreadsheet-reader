@@ -7,7 +7,7 @@ const FEED_URL = 'https://spreadsheets.google.com/feeds/worksheets/{key}/public/
 
 /**
  * @access public
- * @version 0.1.5
+ * @version 0.1.9
  * @since 0.1.5
  */
 export default class SpreadSheet {
